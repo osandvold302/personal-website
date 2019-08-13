@@ -19,7 +19,7 @@ import { NavbarPlugin } from 'bootstrap-vue'
 Vue.use(NavbarPlugin)
 
 export default {
-    name: 'header',
+    name: 'header-component',
     components: {}
 }
 </script>
