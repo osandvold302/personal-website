@@ -1,5 +1,5 @@
 <template>
-    <div b-container class="container">
+    <div b-container class="container-about">
     <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
     <b-row class="justfiy-content-md-center text-center">
         <b-col class="col-text text-left" offset="1" sm="5">
@@ -33,7 +33,7 @@ export default {
 </script>
 
 <style scoped>
-.container {
+.container-about {
     background-color: #89AAC8;
     padding: 0;
     border: 0;

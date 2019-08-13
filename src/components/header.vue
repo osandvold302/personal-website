@@ -1,5 +1,5 @@
 <template>
-    <div class="header">
+    <div class="header-navbar">
         <b-navbar id="navbar" toggleable="lg" type="light" variant="light">
         <b-navbar-toggle class="ml-auto navbar-light" target="nav-collapse"></b-navbar-toggle>
         <b-collapse id="nav-collapse" is-nav>

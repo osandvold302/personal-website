@@ -1,10 +1,10 @@
 <template>
-    <div class="footer">
+    <div class="footer-links">
       <link rel="stylesheet" 
         href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" 
         integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" 
         crossorigin="anonymous">
-        <div v-container class="container">
+        <div v-container class="container-footer">
           <div class="row">
             <p>Website built with VueJS, Font Awesome, and other things</p>
           </div>
@@ -43,7 +43,7 @@ export default {
 </script>
 
 <style scoped>
-.container {
+.container-footer {
   margin-top: 20px;
   max-height: 100%;
 }
