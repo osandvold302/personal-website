@@ -2,6 +2,7 @@
   <div id="app">
     <Header/>
     <About/>
+    <Projects/>
     <Footer/>
   </div>
 </template>
@@ -16,6 +17,7 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 import Header from './components/header.vue'
 import Footer from './components/footer.vue'
 import About from './components/about_me_short.vue'
+import Projects from './components/projects.vue'
 
 Vue.use(BootstrapVue)
 
@@ -24,6 +26,7 @@ export default {
   components: {
     Header,
     About,
+    Projects,
     Footer,
   }
 }
