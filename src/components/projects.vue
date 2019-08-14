@@ -6,16 +6,16 @@
             </b-col>
         </b-row>
         <template v-for="project in projects" id="project-section">
-            <b-form-row class="project-rows" v-bind:key="project.title">
-            <b-col class="justify-content-md-center text-center" offset-sm="1" sm="2" v-bind:key="project.title">
+            <b-form-row class="project-rows" v-bind:key="project.title"> 
+            <b-col class="justify-content-md-center text-center" offset-sm="1" sm="2">
                 <img v-bind:src="getImgUrl(project.img)" class="img-fluid" v-bind:alt="project.img" width=auto/>
             </b-col>
-            <b-col id="project-summary" class="col-text text-left" sm="8" v-bind:key="project.summary">
+            <b-col id="project-summary" class="col-text text-left" sm="8">
                 <h4>{{ project.title }}</h4>
                 <p>{{ project.summary }}</p>
             </b-col>
             </b-form-row>
-            <br v-bind:key="project.title">
+            <br v-bind:key="project.img">
         </template>
     </div>
 </template>
