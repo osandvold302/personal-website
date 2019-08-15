@@ -1,29 +1,4 @@
-# website
-
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+# Welcome to my side project 
+In an attempt to actually do this right no seriously I'm going to do this right, I have chosen a front-end framework (Vue JS) and given 
+myself time to work on it. It's not the prettiest thing in the world, and I hope to continue to build on it as I learn and have 
+the time to.  
