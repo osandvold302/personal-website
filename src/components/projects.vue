@@ -11,8 +11,8 @@
         </b-row>
         <template v-for="project in projects" id="project-section">
             <b-form-row class="project-rows" v-bind:key="project.title"> 
-            <b-col id="project-image" class="justify-content-md-center text-center" offset-sm="1" sm="2">
-                <img v-if="project.img" v-bind:src="getImgUrl(project.img)" class="img-fluid" v-bind:alt="project.img" width=auto/>
+            <b-col id="project-image" class="justify-content-md-center text-center" offset-sm="1" lg="2" md="4" sm="auto">
+                <img v-if="project.img" v-bind:src="getImgUrl(project.img)" class="img-fluid" v-bind:alt="project.img" width=100%/>
                 <img v-else v-bind:src="getImgUrl('logo.png')" class="img-fluid" width=auto/>
                 <div class="overlay">
                     <a v-if="project.github_link" :href="project.github_link" class="icon" title="GitHub Link">
@@ -20,7 +20,7 @@
                     </a>
                 </div>
             </b-col>
-            <b-col id="project-summary" class="col-text text-left" sm="8">
+            <b-col id="project-summary" class="col-text text-left" lg="8" md="6" sm="auto">
                 <h4>{{ project.title }}</h4>
                 <p>{{ project.summary }}</p>
             </b-col>
