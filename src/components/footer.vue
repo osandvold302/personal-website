@@ -37,7 +37,7 @@
 <script>
 //import Vue from 'vue'
 export default {
-    name: 'footer',
+    name: 'footer-component',
     components: {}
 }
 </script>

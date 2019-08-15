@@ -22,10 +22,6 @@
 </template>
 
 <script>
-import Vue from 'vue'
-import { LayoutPlugin } from 'bootstrap-vue'
-Vue.use(LayoutPlugin)
-
 export default {
     name: 'about-me-short',
     components: {}
