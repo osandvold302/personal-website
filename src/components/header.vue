@@ -23,13 +23,7 @@ export default {
   components: {},
   methods: {
     getPathOfEnv () {
-<<<<<<< HEAD
-      return process.env.NODE_ENV === 'production'
-        ? '/personal-website'
-        : '/'
-=======
       return process.env.NODE_ENV === 'production' ? '/personal-website' : '/'
->>>>>>> dev
     }
   }
 }
