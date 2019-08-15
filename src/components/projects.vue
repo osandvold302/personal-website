@@ -21,8 +21,19 @@
                 </div>
             </b-col>
             <b-col id="project-summary" class="col-text text-left" lg="8" md="6" sm="auto">
-                <h4>{{ project.title }}</h4>
-                <p>{{ project.summary }}</p>
+                <b-row align-v="start">
+                    <h4>{{ project.title }}</h4>
+                    <p>{{ project.summary }}</p>
+                </b-row>
+                <b-row align-v="end" align-h="end" v-if="project.tools!=null">
+                    <div  v-for="tool in project.tools" v-bind:key="tool">
+                        <div id="tool-tag">
+                            <b-button pill variant="outline-info" size="sm">
+                                {{ tool }} 
+                            </b-button>
+                        </div>
+                    </div>
+                </b-row>
             </b-col>
             </b-form-row>
             <br v-bind:key="project.img">
@@ -47,9 +58,11 @@ export default {
           summary: 'The Tamino iOS Photo application was built to detect deformities and heat ' +
             'variations of our high temperature furnaces. I built the backend using Swift and AWS tools to connect the user ' +
             'to the DynamoDB table and upload images to an S3 bucket. From there, a lambda function was triggered and detected ' +
-            'parts using a pre-built neural network.',
+            'parts using a pre-built neural network. This product is a proof of concept for a larger IoT platform in manufacturing ' +
+            'and research and development at 3M.',
           img: 'takephotoapp.png',
-          github_link: ''
+          github_link: '',
+          tools: ['Swift', 'Amazon Web Services', 'YOLO']
         },
         {
           title: 'My Little Trader Bot',
@@ -59,7 +72,8 @@ export default {
             'We were able to build a front-end website for monitoring our progress and allow our end user to update the various ' +
             'arguments to a few pre-defined algorithms.',
           img: 'mylittletraderbot.jpg',
-          github_link: 'https://github.com/osandvold302/hackdelft_s19'
+          github_link: 'https://github.com/osandvold302/hackdelft_s19',
+          tools: ['Python', 'Flask', 'HTML', 'CSS']
         },
         {
           title: 'Playground News',
@@ -68,7 +82,8 @@ export default {
           'child\'s reading habits, the reading level they are most comfortable with, and topics of interest. We created a web app for ' +
           'monitoring these statistics and curating relative, age appropriate content for each child.',
           img: 'playgroundnews.png',
-          github_link: 'https://github.com/osandvold302/KidNews-Tiger18'
+          github_link: 'https://github.com/osandvold302/KidNews-Tiger18',
+          tools: ['Python', 'Django', 'ReactJS'] 
         }
       ]
     }
@@ -93,7 +108,7 @@ export default {
 }
 
 .project-rows #project-summary:hover{
-    background-color:rgba(115,121,146,.4); 
+    background-color:rgba(115,121,146,.25); 
 }
 
 .img {
@@ -127,4 +142,26 @@ export default {
     text-align: center;
 }
 
+#tool-tag {
+    text-align: center;
+    height: 100%;
+    padding: 5px;
+}
+
+.btn-outline-info {
+    color: #6a839c;
+    border-color: #6a839c;
+}
+
+.btn-outline-info:hover {
+    color: #fff;
+    background-color: #6a839c;
+    border-color: #6a839c;
+}
+
+.btn-outline-info:not(:disabled):not(.disabled):active, .btn-outline-info:not(:disabled):not(.disabled).active, .show > .btn-outline-info.dropdown-toggle {
+    color: #fff;
+    background-color: #6a839c;
+    border-color: #6a839c;
+}
 </style>

@@ -6,7 +6,7 @@
         crossorigin="anonymous">
         <div v-container class="container-footer">
           <div class="row">
-            <p>Website built with VueJS, Font Awesome, and other things</p>
+            <p>Website built with VueJS, Font Awesome, Bootstrap, and love</p>
           </div>
           <div class="row">
             <div class="col">
