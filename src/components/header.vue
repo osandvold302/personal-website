@@ -23,9 +23,7 @@ export default {
   components: {},
   methods: {
     getPathOfEnv () {
-      return process.env.NODE_ENV //=== 'production'
-        //? '/personal-website'
-        //: '/'
+      return process.env.NODE_ENV === 'production' ? '/personal-website' : '/'
     }
   }
 }
